@@ -1,5 +1,5 @@
-import {inject, bindable, noView, customElement, processContent, Loader} from 'aurelia-framework';
-import ace from 'ace-builds';
+import {inject, bindable, bindingMode, noView, customElement, processContent, Loader} from 'aurelia-framework';
+import ace from 'brace';
 import dedent from './dedent';
 import {PropConverter} from './prop-converter';
 
@@ -19,6 +19,7 @@ export class AceEditor {
         this.ace = ace;
         this.innerHTML = this.element.innerHTML;
         this.loader = loader;
+        console.log("Ace-Editor()");
     }
 
     setValue() {
@@ -60,7 +61,7 @@ export class AceEditor {
     }
 
     getConfig() {
-        return   Object.assign(this.parseConfigAttributes(), this.options);
+        return Object.assign(this.parseConfigAttributes(), this.options);
     }
 
     bind() {
@@ -68,10 +69,11 @@ export class AceEditor {
 
         this.config = Object.assign(this.getConfig());
         this.ace.config.set('basePath', this.getAceSrcPath(this.loader || System));
-
+        console.log("Setting editor",this.editor);
         this.editor = this.ace.edit(this.element);
         this.editor.$blockScrolling = Infinity;
         this.editor.setOptions(this.config);
+        console.log("editor set:",this.editor);
     }
 
     attached() {
