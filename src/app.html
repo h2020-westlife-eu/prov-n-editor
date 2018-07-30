@@ -1,0 +1,21 @@
+<template>
+  <style>
+    .ace_editor {
+      display: block;
+      border: 1px solid lightgray;
+      margin: auto;
+      height: 300px;
+      width: 100%;
+    }
+  </style>
+  <p>PROV-N editor</p>
+  <ace editor.two-way="aceEditor">
+    // this is an example of the Aurelia ace editor plugin
+
+    export class App {
+    constructor() {
+    this.aceContent = 'Hello World';
+    }
+    }
+  </ace>
+</template>
