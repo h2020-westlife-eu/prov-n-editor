@@ -1062,7 +1062,7 @@ module.exports.src='"no use strict";\n' +
   '    return (new Date)\n' +
   '      .getTime()\n' +
   '  });\n' +
-  '  var _ = "\t\\n\\f\\r \u00a0\u1680\u180e\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u202f\u205f\u3000\u2028\u2029\ufeff";\n' +
+  '  var _ = " \\n\\f\\r\u00a0\u1680\u180e\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u202f\u205f\u3000\u2028\u2029\ufeff";\n' +
   '  if (!String.prototype.trim || _.trim()) {\n' +
   '    _ = "[" + _ + "]";\n' +
   '    var D = new RegExp("^" + _ + _ + "*"),\n' +
