@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PROV-N editor with ANTLR4 and ACE</title>
+    <link rel="stylesheet" href="index.css">
+
+    <script src="bower_components/ace-builds/src-noconflict/ace.js"></script>
+    <script src="bower_components/ace-builds/src-noconflict/ext-language_tools.js"></script>
+    <script src="prov-n-mode.js"></script>
+</head>
+<body>
+
+<p>PROV-N editor. Use <b>ctrl-space</b> for basic autocompletion, see left bar for syntax error. </p>
+
+<div id="editor">
+    document
+    default &lt;http://anotherexample.org/&gt;
+    prefix ex &lt;http://example.org/&gt;
+
+    entity(e2, [ prov:type="File", ex:path="/shared/crime.txt", ex:creator="Alice",
+    ex:content="There was a lot of crime in London last month."])
+    activity(a1, 2011-11-16T16:05:00, -, [prov:type="edit"])
+    wasGeneratedBy(e2, a1, -, [ex:fct="save"])
+    wasAssociatedWith(a1, ag2, -, [prov:role="author"])
+    agent(ag2, [ prov:type='prov:Person', ex:name="Bob" ])
+
+    endDocument
+</div>
+</body>
+<script>
+    ace.require("ace/ext/language_tools");
+    var editor = ace.edit("editor");
+    editor.setOptions({enableBasicAutocompletion:true})
+    editor.setTheme('ace/theme/chrome');
+    editor.getSession().setMode("ace/mode/provn");
+</script>
+</html>
