@@ -1,4 +1,6 @@
-== ACE Editor for PROVN with syntax highlight and syntax validation using ANTL4 grammar
+## ACE Editor for PROVN 
+
+with syntax highlighting and syntax validation using ANTL4 grammar and ACE worker.
 
 Proof of concept sample editor.
 
