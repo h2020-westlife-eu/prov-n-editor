@@ -1,6 +1,6 @@
 // Generated from PROV_N.g4 by ANTLR 4.7.1
 // jshint ignore: start
-var antlr4 = require('antlr4/index');
+var antlr4 = require('vendor/antlr4/index');
 var PROV_NListener = require('./PROV_NListener').PROV_NListener;
 var grammarFileName = "PROV_N.g4";
 
@@ -323,41 +323,41 @@ var decisionsToDFA = atn.decisionToState.map( function(ds, index) { return new a
 
 var sharedContextCache = new antlr4.PredictionContextCache();
 
-var literalNames = [ null, "'default'", "'prefix'", "'entity'", "'('", "')'", 
-                     "','", "'['", "']'", "'='", "'%%'", "'activity'", "'wasGeneratedBy'", 
-                     "';'", "'used'", "'wasStartedBy'", "'wasEndedBy'", 
-                     "'wasInvalidatedBy'", "'wasInformedBy'", "'agent'", 
-                     "'wasAssociatedWith'", "'wasAttributedTo'", "'actedOnBehalfOf'", 
-                     "'wasDerivedFrom'", "'wasInfluencedBy'", "'alternateOf'", 
-                     "'specializationOf'", "'hadMember'", "'{'", "'}'", 
-                     "'document'", "'endDocument'", "'bundle'", "'endBundle'", 
+var literalNames = [ null, "'default'", "'prefix'", "'entity'", "'('", "')'",
+                     "','", "'['", "']'", "'='", "'%%'", "'activity'", "'wasGeneratedBy'",
+                     "';'", "'used'", "'wasStartedBy'", "'wasEndedBy'",
+                     "'wasInvalidatedBy'", "'wasInformedBy'", "'agent'",
+                     "'wasAssociatedWith'", "'wasAttributedTo'", "'actedOnBehalfOf'",
+                     "'wasDerivedFrom'", "'wasInfluencedBy'", "'alternateOf'",
+                     "'specializationOf'", "'hadMember'", "'{'", "'}'",
+                     "'document'", "'endDocument'", "'bundle'", "'endBundle'",
                      null, null, null, null, "'<'", "'>'", "'.'", "'-'" ];
 
-var symbolicNames = [ null, null, null, null, null, null, null, null, null, 
-                      null, null, null, null, null, null, null, null, null, 
-                      null, null, null, null, null, null, null, null, null, 
-                      null, null, null, "DOCUMENT", "ENDDOCUMENT", "BUNDLE", 
-                      "ENDBUNDLE", "WS", "COMMENT", "LINE_COMMENT", "IRI_REF", 
-                      "LESS", "GREATER", "DOT", "MINUS", "PREFX", "QUALIFIED_NAME", 
-                      "HEX", "STRING_LITERAL", "INT_LITERAL", "QUALIFIED_NAME_LITERAL", 
-                      "ECHAR", "STRING_LITERAL2", "STRING_LITERAL_LONG2", 
+var symbolicNames = [ null, null, null, null, null, null, null, null, null,
+                      null, null, null, null, null, null, null, null, null,
+                      null, null, null, null, null, null, null, null, null,
+                      null, null, null, "DOCUMENT", "ENDDOCUMENT", "BUNDLE",
+                      "ENDBUNDLE", "WS", "COMMENT", "LINE_COMMENT", "IRI_REF",
+                      "LESS", "GREATER", "DOT", "MINUS", "PREFX", "QUALIFIED_NAME",
+                      "HEX", "STRING_LITERAL", "INT_LITERAL", "QUALIFIED_NAME_LITERAL",
+                      "ECHAR", "STRING_LITERAL2", "STRING_LITERAL_LONG2",
                       "DATETIME", "LANGTAG" ];
 
-var ruleNames =  [ "document", "namespaceDeclarations", "defaultNamespaceDeclaration", 
-                   "namespaceDeclaration", "namespace", "bundle", "identifier", 
-                   "expression", "entityExpression", "optionalAttributeValuePairs", 
-                   "attributeValuePairs", "attributeValuePair", "attribute", 
-                   "literal", "typedLiteral", "datatype", "convenienceNotation", 
-                   "activityExpression", "timeOrMarker", "time", "generationExpression", 
-                   "optionalIdentifier", "identifierOrMarker", "eIdentifier", 
-                   "eIdentifierOrMarker", "aIdentifierOrMarker", "aIdentifier", 
-                   "agIdentifierOrMarker", "agIdentifier", "cIdentifier", 
-                   "gIdentifier", "gIdentifierOrMarker", "uIdentifier", 
-                   "uIdentifierOrMarker", "usageExpression", "startExpression", 
-                   "endExpression", "invalidationExpression", "communicationExpression", 
-                   "agentExpression", "associationExpression", "attributionExpression", 
-                   "delegationExpression", "derivationExpression", "influenceExpression", 
-                   "alternateExpression", "specializationExpression", "membershipExpression", 
+var ruleNames =  [ "document", "namespaceDeclarations", "defaultNamespaceDeclaration",
+                   "namespaceDeclaration", "namespace", "bundle", "identifier",
+                   "expression", "entityExpression", "optionalAttributeValuePairs",
+                   "attributeValuePairs", "attributeValuePair", "attribute",
+                   "literal", "typedLiteral", "datatype", "convenienceNotation",
+                   "activityExpression", "timeOrMarker", "time", "generationExpression",
+                   "optionalIdentifier", "identifierOrMarker", "eIdentifier",
+                   "eIdentifierOrMarker", "aIdentifierOrMarker", "aIdentifier",
+                   "agIdentifierOrMarker", "agIdentifier", "cIdentifier",
+                   "gIdentifier", "gIdentifierOrMarker", "uIdentifier",
+                   "uIdentifierOrMarker", "usageExpression", "startExpression",
+                   "endExpression", "invalidationExpression", "communicationExpression",
+                   "agentExpression", "associationExpression", "attributionExpression",
+                   "delegationExpression", "derivationExpression", "influenceExpression",
+                   "alternateExpression", "specializationExpression", "membershipExpression",
                    "extensibilityExpression", "extensibilityArgument", "extensibilityTuple" ];
 
 function PROV_NParser (input) {
@@ -4512,7 +4512,7 @@ PROV_NParser.prototype.extensibilityExpression = function() {
                 this.state = 462;
                 this.match(PROV_NParser.T__5);
                 this.state = 463;
-                this.extensibilityArgument(); 
+                this.extensibilityArgument();
             }
             this.state = 468;
             this._errHandler.sync(this);

@@ -12,11 +12,6 @@
             width: 100%;
         }
     </style>
-
-    <script src="vendor/ace-builds/src-noconflict/ace.js"></script>
-    <script src="vendor/ace-builds/src-noconflict/theme-chrome.js"></script>
-    <script src="vendor/ace-builds/src-noconflict/ext-language_tools.js"></script>
-    <script src="prov-n-mode.js"></script>
 </head>
 <body>
 
@@ -37,11 +32,5 @@ document
 endDocument
 </div>
 </body>
-<script>
-    ace.require("ace/ext/language_tools");
-    var editor = ace.edit("editor");
-    editor.setOptions({enableBasicAutocompletion:true})
-    editor.setTheme('ace/theme/chrome');
-    editor.getSession().setMode("ace/mode/provn");
-</script>
+<script src="editor.bundle.js"></script>
 </html>

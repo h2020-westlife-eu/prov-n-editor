@@ -1,7 +1,6 @@
-importScripts("bower_components/ace-worker/worker.js");
-importScripts("bower_components/ace-builds/src-noconflict/ace.js");
-importScripts("bower_components/ace-worker/mirror.js");
-
+importScripts("vendor/ace-worker/worker.js");
+importScripts("vendor/ace-builds/src-noconflict/ace.js");
+importScripts("vendor/ace-worker/mirror.js");
 ace.define('ace/worker/provn',
     ["require", "exports", "module", "ace/lib/oop", "ace/worker/mirror"],
     function (require, exports, module) {
@@ -30,7 +29,7 @@ ace.define('ace/worker/provn',
         var antlr4, ProvnLexer, ProvnParser;
         try {
             window.require = antlr4_require;
-            antlr4 = antlr4_require('antlr4/index');
+            antlr4 = antlr4_require('vendor/antlr4/index');
             ProvnLexer = antlr4_require('./parser/PROV_NLexer').PROV_NLexer;
             ProvnParser = antlr4_require('./parser/PROV_NParser').PROV_NParser;
         } finally {
