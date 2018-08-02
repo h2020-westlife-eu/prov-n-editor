@@ -13,3 +13,7 @@ Steps to do
 - use index.html to directly test the output
 - to build distribution - install webpack and copy-webpack-plugin `npm install -g webpack-cli` `npm install copy-webpack-plugin` and execute `webpack`
 this will produce `dist/` directory which can be copied into desired location - index.html contains relative links.
+
+## Related work
+
+PROV-N editor without syntax checking at [openprovenance.org/tools/editor/](https://openprovenance.org/tools/editor/)
