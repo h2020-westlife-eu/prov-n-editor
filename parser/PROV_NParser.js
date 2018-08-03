@@ -70,7 +70,7 @@ var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
     "4\u00034\u00034\u00074\u01f1\n4\f4\u000e4\u01f4\u000b4\u00034\u0003",
     "4\u00054\u01f8\n4\u00034\u0002\u00025\u0002\u0004\u0006\b\n\f\u000e",
     "\u0010\u0012\u0014\u0016\u0018\u001a\u001c\u001e \"$&(*,.02468:<>@B",
-    "DFHJLNPRTVXZ\\^`bdf\u0002\u0003\u0003\u0002,-\u0002\u01ff\u0002h\u0003",
+    "DFHJLNPRTVXZ\\^`bdf\u0002\u0003\u0003\u0002-.\u0002\u01ff\u0002h\u0003",
     "\u0002\u0002\u0002\u0004\u007f\u0003\u0002\u0002\u0002\u0006\u0087\u0003",
     "\u0002\u0002\u0002\b\u008a\u0003\u0002\u0002\u0002\n\u008e\u0003\u0002",
     "\u0002\u0002\f\u0090\u0003\u0002\u0002\u0002\u000e\u009d\u0003\u0002",
@@ -111,7 +111,7 @@ var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
     "\u0085\u0003\u0002\u0002\u0002\u0085\u0005\u0003\u0002\u0002\u0002\u0086",
     "\u0084\u0003\u0002\u0002\u0002\u0087\u0088\u0007\u0003\u0002\u0002\u0088",
     "\u0089\u0007\'\u0002\u0002\u0089\u0007\u0003\u0002\u0002\u0002\u008a",
-    "\u008b\u0007\u0004\u0002\u0002\u008b\u008c\u0007,\u0002\u0002\u008c",
+    "\u008b\u0007\u0004\u0002\u0002\u008b\u008c\u0007-\u0002\u0002\u008c",
     "\u008d\u0005\n\u0006\u0002\u008d\t\u0003\u0002\u0002\u0002\u008e\u008f",
     "\u0007\'\u0002\u0002\u008f\u000b\u0003\u0002\u0002\u0002\u0090\u0091",
     "\u0007\"\u0002\u0002\u0091\u0093\u0005\u000e\b\u0002\u0092\u0094\u0005",
@@ -157,13 +157,13 @@ var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
     "\u00cf\u00d0\t\u0002\u0002\u0002\u00d0\u001b\u0003\u0002\u0002\u0002",
     "\u00d1\u00d4\u0005\u001e\u0010\u0002\u00d2\u00d4\u0005\"\u0012\u0002",
     "\u00d3\u00d1\u0003\u0002\u0002\u0002\u00d3\u00d2\u0003\u0002\u0002\u0002",
-    "\u00d4\u001d\u0003\u0002\u0002\u0002\u00d5\u00d6\u0007/\u0002\u0002",
+    "\u00d4\u001d\u0003\u0002\u0002\u0002\u00d5\u00d6\u00070\u0002\u0002",
     "\u00d6\u00d7\u0007\f\u0002\u0002\u00d7\u00d8\u0005 \u0011\u0002\u00d8",
     "\u001f\u0003\u0002\u0002\u0002\u00d9\u00da\t\u0002\u0002\u0002\u00da",
-    "!\u0003\u0002\u0002\u0002\u00db\u00dd\u0007/\u0002\u0002\u00dc\u00de",
+    "!\u0003\u0002\u0002\u0002\u00db\u00dd\u00070\u0002\u0002\u00dc\u00de",
     "\u00076\u0002\u0002\u00dd\u00dc\u0003\u0002\u0002\u0002\u00dd\u00de",
     "\u0003\u0002\u0002\u0002\u00de\u00e2\u0003\u0002\u0002\u0002\u00df\u00e2",
-    "\u00070\u0002\u0002\u00e0\u00e2\u00071\u0002\u0002\u00e1\u00db\u0003",
+    "\u0007,\u0002\u0002\u00e0\u00e2\u00071\u0002\u0002\u00e1\u00db\u0003",
     "\u0002\u0002\u0002\u00e1\u00df\u0003\u0002\u0002\u0002\u00e1\u00e0\u0003",
     "\u0002\u0002\u0002\u00e2#\u0003\u0002\u0002\u0002\u00e3\u00e4\u0007",
     "\r\u0002\u0002\u00e4\u00e5\u0007\u0006\u0002\u0002\u00e5\u00eb\u0005",
@@ -338,10 +338,10 @@ var symbolicNames = [ null, null, null, null, null, null, null, null, null,
                       null, null, null, null, null, null, null, null, null,
                       null, null, null, "DOCUMENT", "ENDDOCUMENT", "BUNDLE",
                       "ENDBUNDLE", "WS", "COMMENT", "LINE_COMMENT", "IRI_REF",
-                      "LESS", "GREATER", "DOT", "MINUS", "PREFX", "QUALIFIED_NAME",
-                      "HEX", "STRING_LITERAL", "INT_LITERAL", "QUALIFIED_NAME_LITERAL",
-                      "ECHAR", "STRING_LITERAL2", "STRING_LITERAL_LONG2",
-                      "DATETIME", "LANGTAG" ];
+                      "LESS", "GREATER", "DOT", "MINUS", "INT_LITERAL",
+                      "PREFX", "QUALIFIED_NAME", "HEX", "STRING_LITERAL",
+                      "QUALIFIED_NAME_LITERAL", "ECHAR", "STRING_LITERAL2",
+                      "STRING_LITERAL_LONG2", "DATETIME", "LANGTAG" ];
 
 var ruleNames =  [ "document", "namespaceDeclarations", "defaultNamespaceDeclaration",
                    "namespaceDeclaration", "namespace", "bundle", "identifier",
@@ -420,11 +420,11 @@ PROV_NParser.LESS = 38;
 PROV_NParser.GREATER = 39;
 PROV_NParser.DOT = 40;
 PROV_NParser.MINUS = 41;
-PROV_NParser.PREFX = 42;
-PROV_NParser.QUALIFIED_NAME = 43;
-PROV_NParser.HEX = 44;
-PROV_NParser.STRING_LITERAL = 45;
-PROV_NParser.INT_LITERAL = 46;
+PROV_NParser.INT_LITERAL = 42;
+PROV_NParser.PREFX = 43;
+PROV_NParser.QUALIFIED_NAME = 44;
+PROV_NParser.HEX = 45;
+PROV_NParser.STRING_LITERAL = 46;
 PROV_NParser.QUALIFIED_NAME_LITERAL = 47;
 PROV_NParser.ECHAR = 48;
 PROV_NParser.STRING_LITERAL2 = 49;
