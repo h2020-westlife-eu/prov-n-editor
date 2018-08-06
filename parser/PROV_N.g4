@@ -333,6 +333,11 @@ fragment DIGIT
    : '0' .. '9'
    ;
 
+INT_LITERAL
+   : ('-')? (DIGIT) +
+   ;
+
+
 
 PREFX
    : PN_PREFIX
@@ -372,10 +377,6 @@ STRING_LITERAL
    : STRING_LITERAL2 | STRING_LITERAL_LONG2
    ;
 
-
-INT_LITERAL
-   : ('-')? (DIGIT) +
-   ;
 
 
 QUALIFIED_NAME_LITERAL

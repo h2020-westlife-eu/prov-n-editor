@@ -6,7 +6,7 @@
     <style>
         #editor {
             position: absolute;
-            top: 40px;
+            top: 80px;
             bottom: 0;
             left: 0;
             width: 100%;
@@ -15,22 +15,11 @@
 </head>
 <body>
 
-<p>PROV-N editor. Use <b>ctrl-space</b> for basic autocompletion, see left bar for syntax error. </p>
-
+<p>PROV-N editor. Put initial content into page in url after hash :#content=... or #contentBase64=(base 64) or #contentLZ=(lz and base64) )Use <b>ctrl-space</b> for basic autocompletion, see left bar for syntax error. If opened by another web app <button onclick="sendbackplain()">Submit plain</button> or <button onclick="sendbackcompressed()">Submit compressed</button>
+</p>
 <div id="editor">
-document
-    default &lt;http://anotherexample.org/&gt;
-    prefix ex &lt;http://example.org/&gt;
-
-    entity(e2, [ prov:type="File", ex:path="/shared/crime.txt", ex:creator="Alice",
-    ex:content="There was a lot of crime in London last month."])
-    activity(a1, 2011-11-16T16:05:00, -, [prov:type="edit"])
-    wasGeneratedBy(e2, a1, -, [ex:fct="save"])
-    wasAssociatedWith(a1, ag2, -, [prov:role="author"])
-    agent(ag2, [ prov:type='prov:Person', ex:name="Bob" ])
-
-endDocument
+    document
+    endDocument
 </div>
-</body>
 <script src="editor.bundle.js"></script>
 </html>
