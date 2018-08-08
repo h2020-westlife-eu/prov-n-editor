@@ -5,8 +5,10 @@ with syntax highlighting and syntax validation using ANTL4 grammar and ACE worke
 Proof of concept sample editor.
 
 The editor can communicate with other web apps using cross document messaging API (window.opener.postMessage()).
-The editor can be filled by initial content, 
-just pass the content as an hash parameter 
+- 'submit plain' button sends the message in the form {'contentType':'text/plain','content':'...'}
+- 'submit compressed' button sends the content compressed by LZ algorithm and encoded in base64 in the form {'contentType':'application/x-lzip','content':'FDAmHsGMFcFsFMB2AXEaAOAneAzAlgB4A...'}
+
+The editor can be filled by initial content in following hash parameters: 
 - 'content' for plain/text e.g.: https://h2020-westlife-eu.github.io/prov-n-editor/#content=document%0Dentity(e1)%0DendDocument
 - 'contentBase64' for base64 encoded text 
 - 'contentLZ' for LZ compressed and base64 encoded text,
